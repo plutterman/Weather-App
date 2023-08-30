@@ -9,10 +9,96 @@
         <title>My Weather App</title>
     </head>
     <body>
-
         <header></header>
-        <nav></nav>
-        <main></main>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>News</li>
+                <li>Weather</li>
+                <li style="float: right">About</li>
+            </ul>
+        </nav>
+        <main>
+
+            <section class="weather-section">
+                <div class="page">
+                  <h1>LATEST WEATHER</h1>
+                  <div class="archive">
+                    <article class="article">
+                      <section id="stats">
+                        <div class="summary">
+                          <h2>Weather summary</h2>
+                          <h3 id="five-city"> Salt Lake City</h3>
+                          <p>Currently: Sunny<span id="current-desc"></span></p>
+                          <p>
+                            Tempature:
+                            <span id="current-temp"></span> 79°F
+                          </p>
+                          <p>Feels Like: <span id="current-windChill"></span> 89°F</p>
+                          <p>Humidity: 26<span id="current-humid"></span>%</p>
+                          <p>Wind Speed: NW 8<span id="current-windSpeed"></span> mph</p>
+                        </div>
+                      </section>
+                      <div style="width: 600px; height: 600px">
+                        <img src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/Sunny.jpg?raw=true" alt="Weather Icon For Today" width="50%" height="50%" />
+                      </div>
+                    </article>
+        
+                    <!-- 5 day forecast -->
+                    <div class="article-five-day">
+                      <article id="forecastContainer">
+                        <h2 id="forecastTitle">5 Day Forecast</h2>
+                        <h3 id="city">Salt Lake City</h3>                       
+                        <div class="flex">
+                          <div class="flex-col" style="width: 400px; height: 400px;">
+                            <span id="dayTitle1" class="col-head">Day 1</span>
+                            <span class="temp-data">
+                              <span id="data1"></span>
+                              <span>94°F</span>
+                              <img id="weatherIcon1" class="weatherIcon" src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/Sunny.jpg?raw=true" width="50%" height="50%" />
+                            </span>
+                          </div>
+                          <div class="flex-col" style="width: 400px; height: 400px;">
+                            <span id="dayTitle2" class="col-head">Day 2</span>
+                            <div class="temp-data">
+                              <span id="data2"></span>
+                              <span>82°F</span>
+                              <img id="weatherIcon2" class="weatherIcon" src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/thunderStorms.jpg?raw=true" width="50%" height="50%" />
+                            </div>
+                          </div>
+                          <div class="flex-col" style="width: 400px; height: 400px;">
+                            <span id="dayTitle3" class="col-head">Day 3</span>
+                            <div class="temp-data">
+                              <span id="data3"></span>
+                              <span>82°F</span>
+                              <img id="weatherIcon3" class="weatherIcon" src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/partlyCloudy.jpg?raw=true" width="50%" height="50%" />
+                            </div>
+                          </div>
+                          <div class="flex-col" style="width: 400px; height: 400px;">
+                            <span id="dayTitle4" class="col-head">Day 4</span>
+                            <div class="temp-data">
+                              <span id="data4"></span>
+                              <span>78°F</span>
+                              <img id="weatherIcon4" class="weatherIcon" src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/overcast.jpg?raw=true" width="50%" height="50%" />
+                            </div>
+                          </div>
+                          <div class="flex-col" style="width: 400px; height: 400px;">
+                            <span id="dayTitle5" class="col-head">Day 5</span>
+                            <div class="temp-data">
+                              <span id="data5"></span>
+                              <span>76°F</span>
+                              <img id="weatherIcon5" class="weatherIcon" src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/overcast.jpg?raw=true" width="50%" height="50%" />
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <hr />
+
+        </main>
         <footer></footer>
     </body>
 
