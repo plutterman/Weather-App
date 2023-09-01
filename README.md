@@ -1,1 +1,1 @@
-The First Prototype for my Weather App with only the HTML implemented
+Main Branch for the Weather-News app
